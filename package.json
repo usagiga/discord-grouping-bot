@@ -1,7 +1,11 @@
 {
 	"name": "app",
 	"scripts": {
-		"dev": "bun run --hot src/index.ts"
+		"dev": "bun run --hot src/index.ts",
+		"lint": "biome lint",
+		"lint:fix": "biome lint --write",
+		"format": "biome format",
+		"format:fix": "biome format --write"
 	},
 	"dependencies": {
 		"hono": "^4.11.3"
